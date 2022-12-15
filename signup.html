@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <script src="https://kit.fontawesome.com/0db55d1582.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #dbe8f4;
+        }
+        .form-box{
+            width: 500px;
+            margin: auto;
+            margin-top: 10%;
+            /* position: absolute; */
+            /* top: 20%; */
+            /* left: 50%; */
+            /* transform: translate(-50%,50%); */
+            padding: 50px 60px 70px;
+            text-align: center;
+            background-color: #ebf7fe;
+            /* border: 1px dashed red; */
+        }
+        .form-box h1 {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+        .form-box .input-field {
+            margin-bottom: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        #signin-btn {
+            font-weight: 700;
+            color: white;
+            background-color:#51b6f8;
+            border-radius: 30px;
+        }
+        #signin-btn:hover {
+            background-color: #a5d8fa;
+        }
+        input{
+            font-size: 16px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border: 0;
+            border-radius: 5px;
+            padding: 18px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="signup">
+        <div class="form-box">
+            <h1>Create Account</h1>
+            <form>
+                <div class="input-field">
+                    <input type="text" id="name" placeholder="Enter Username">
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password" placeholder="Enter your Password">
+                </div>
+                <div class="input-field">
+                    <input type="submit" id="signin-btn" value="CREATE ACCOUNT" />
+                </div>
+                <p>Already member? <a href="./login.html">Sign in</a></p>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script>
+    let form = document.querySelector("form");
+  
+    let data = JSON.parse(localStorage.getItem("account-data")) || [];
+
+    form.addEventListener("submit", myfun)
+
+    function myfun(event){
+        event.preventDefault()
+        
+        let formData={
+        name:form.name.value,
+        email:form.email.value,
+        password: form.password.value
+        }
+        data.push(formData)
+        localStorage.setItem("account-data", JSON.stringify(data));
+        console.log(data)
+    }
+</script>
+</html>
