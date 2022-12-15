@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", Sans-serif;
+}
+.navbar {
+    background-color: #267bf6;
+    text-align: center;
+
+}
+.navbar ul {
+    display: inline-flex;
+    list-style: none;
+    color: rgb(167, 167, 167);
+}
+.navbar ul li {
+    width: 130px;
+    padding: 15px;
+    margin: 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white
+    
+}
+.navbar ul li:hover {
+    background-color: transparent;
+    color: white;
+}
+.sub-menu {
+    display: none;
+    background-color: #267bf6;
+}
+.navbar ul li:hover  .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navbar ul li:hover  .sub-menu ul {
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover  .sub-menu ul li {
+    width: 170px;
+    padding: 10px;
+}
+
+/* --------------------------- Top Section ----------------------------- */
+
+#top-container {
+    height: 800px;
+    background-color: #194e9d;
+}
+#top-section {
+    margin: auto;
+    display: flex;
+    width: 80%;
+    background-color: #194e9d;
+    color: white;
+    /* border: 1px solid; */
+}
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 30px;
+    margin-top: 90px;
+}
+.left-section h1 {
+    font-size: 59px;
+    line-height: 1.2;
+    font-family: "Montserrat", Sans-serif;
+    margin-bottom: 20px;
+}
+.left-section h5 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.left-section div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+.left-section div:last-child div:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.right-section > img {
+    width: 120%;
+    margin-top: 150px;
+    text-align: center;
+}
+
+/* -------------------------------- Mid section & Image sliding part---------------------- */
+.carousel {
+    width: 80%;
+    margin: auto;
+    background: white;
+}
+
+.carousel-cell {
+    margin-right: 10px;
+    border-radius: 6px;
+}
+#mid-section {
+    margin: 80px 10px;
+}
+#mid-section h2{
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+#mid-section h4 {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#mid-section div:last-child {
+    margin-top: 50px;
+    text-align: center;
+    /* border: 1px solid; */
+}
+#mid-section div:last-child button:first-child {
+    font-size: 22px;
+    border-radius: 40px 40px 40px 40px;
+    padding: 12px 50px 12px 50px;
+    color: white;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39B7FF;
+    background-color: #45b6f8;
+    margin-right: 20px;
+}
+#mid-section div:last-child button:first-child:hover {
+    color: #45b6f8;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39B7FF;
+}
+#mid-section div:last-child button:last-child {
+    font-size: 22px;
+    border-radius: 40px 40px 40px 40px;
+    padding: 12px 50px 12px 50px;
+    color: white;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39B7FF;
+    background-color: #45b6f8;
+    margin-left: 20px;
+}
+#mid-section div:last-child button:last-child:hover {
+    color: #45b6f8;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39B7FF;
+}
+
+/* -------------------------------- Features section ---------------------- */
+.features {
+    margin: auto;
+    width: 80%;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+    display: flex;
+    /* border: 1px solid; */
+}
+.left-feture-section{
+    width: 65%;
+    /* border: 1px dashed olivedrab; */
+}
+.left-feture-section img {
+    width: 100%;
+}
+.right-feture-section {
+    width: 45%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.right-feture-section h4,h1,h3, .feature div:first-child h4 {
+    margin-bottom: 5%;
+}
+.right-feture-section h4, .feature div:first-child h4 {
+    color: rgb(139 187 197);
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.btn {
+    font-size: 22px;
+    border-radius: 40px 40px 40px 40px;
+    padding: 12px 50px 12px 50px;
+    color: white;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39B7FF;
+    background-color: #45b6f8;
+    margin-left: 20px;
+    
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    color: #45b6f8;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39B7FF;
+}
+.btn a:hover {
+    color: #45b6f8;
+}
+.feature {
+    margin: auto;
+    width: 80%;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+    display: flex;
+    /* border: 1px dashed green; */
+}
+.feature > div:first-child {
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid; */
+}
+.feature > div:last-child {
+    width: 50%;
+}
+.feature > div:last-child img {
+    width: 120%;
+}
+
+/* -------------------------------- Subscription section ---------------------- */
+#card-container {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+}
+.card {
+    margin: auto;
+    width: 340px;
+    height: 1200px;
+    padding: 250px 40px 30px 40px;
+    color: #F5F5F5;
+    background-color: #404040;
+    /* border: 1px dashed blue; */
+    border-radius: 7px;
+    
+}
+.card h1,h3 {
+    margin-bottom: 8%;
+}
+.card h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+}
+.card h3 {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+}
+.btn2 {
+    margin-top: 30px;
+}
+.btn2 button {
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 40px 40px 40px 40px;
+    padding: 12px 50px 12px 50px;
+    color: white;
+    border-width: 2px 2px 2px 2px;
+    border-color: white;
+    background-color: transparent;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btn2 button:hover {
+    color: #45b6f8;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39B7FF;
+}
+.btn3 {
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 40px 40px 40px 40px;
+    padding: 12px 50px 12px 50px;
+    color: white;
+    border-width: 2px 2px 2px 2px;
+    border-color: #45b6f8;
+    background-color: #45b6f8;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btn3:hover {
+    color: #45b6f8;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #39B7FF;
+}
+/* -------------------------------- Bottom section ---------------------- */
+#bottom-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 70px 5px;
+    /* border: solid; */
+    text-align: center;
+    background-color: #f8fbfe;
+    
+}
+#bottom-section h1 {
+    margin: 10px 10px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+#bottom-section h3 {
+    margin: 30px 10px;
+    padding: 5px 120px;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* -------------------------------- Footer section ---------------------- */
+.footer {
+    line-height: 1.5;      
+    padding: 60px;
+    background-color: #ffffff;
+    /* border: solid; */
+}
+.sub-container {
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col, .copyright {
+    width: 25%;
+    padding: 2px;
+    /* border: 1px dashed green; */
+}
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+ul {
+    list-style: none;
+}
+.footer-col li a{
+    color: rgb(129, 129, 129);
+}
+.footer-col li a:hover {
+    text-decoration: none;
+    color: #45b6f8;
+}
+.sub-cont-2 {
+    margin-top: 50px;
+    /* border: 1px dashed red; */
+}
+.copyright {
+    margin: auto;
+}
+.copyright h4 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    /* border: 1px dashed green; */
+}
