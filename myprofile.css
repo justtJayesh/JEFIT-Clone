@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* -------------------------------------- Nav Section --------------------------------- */
+#header {
+    display: flex;
+    justify-content: center;
+    /* border: solid; */
+    background-color: #267bf6;
+}
+.navbar {
+    background-color: #267bf6;
+    text-align: center;
+    /* border: 1px dashed red; */
+
+}
+.navbar ul {
+    display: inline-flex;
+    list-style: none;
+    /* color: rgb(167, 167, 167); */
+
+}
+.navbar ul li {
+    width: 147px;
+    padding: 12px;
+    margin: 12px 0px;
+}
+.navbar ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white
+    
+}
+.navbar ul li:hover {
+    background-color: transparent;
+    color: white;
+}
+.sub-menu {
+    display: none;
+    background-color: #267bf6;
+}
+.navbar ul li:hover  .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navbar ul li:hover  .sub-menu ul {
+    display: block;
+    text-align: left;
+    margin: 10px;
+}
+.navbar ul li:hover  .sub-menu ul li {
+    width: 220px;
+    padding: 10px;
+}
+.signup-btn {
+    font-size: 18px;
+    width: 120px;
+    height: 34px;
+    border: 0;
+    color: #267bf6;
+    background-color: white;
+    border-radius: 10px;
+}
+.signup-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #1161d0;
+}
+
+/* ------------------------------------- Left container --------------------------------------- */
+.left-container {
+    padding: 10px;
+    width: 370px;
+    /* border: 1px solid black; */
+}
+
+.profile-img {
+    margin: auto;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    /* border: 1px solid blue; */
+}
+
+.profile-img>div {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    /* border: 1px dashed black; */
+}
+
+.profile-img>div img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#personal-details {
+    margin: auto;
+    width: 250px;
+    /* border: 1px solid red; */
+}
+
+#personal-details li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 3px;
+    border-bottom: 0.5px solid rgb(228, 228, 228);
+    /* border: 1px solid green; */
+    margin-bottom: 10px;
+}
+
+#personal-details li a {
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#personal-details li img {
+    width: 20px;
+    padding: 0;
+    margin-right: 10px;
+}
+
+#left-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    /* border: 1px solid orange; */
+}
+
+.frnd-pro {
+    margin: auto;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+
+.frnd-pro>div {
+    width: 80px;
+    /* border: 1px solid red; */
+}
+
+.frnd-pro>div img {
+    width: 100%;
+}
+
+/* ------------------------------------- right container --------------------------------------- */
+.right-container {
+    width: 55%;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+.top-rigth-container>div {
+    display: flex;
+    gap: 20px;
+    /* padding: 16px; */
+}
+
+.top-rigth-container {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid grey;
+}
+
+.btn>button {
+    margin-bottom: 10px;
+    border: 0;
+    padding: 7px 10px;
+    border-bottom: 0.5px solid rgb(226, 226, 226);
+    background-color: transparent;
+}
+
+.btn>button:hover {
+    cursor: pointer;
+    color: #54bdea;
+    border-bottom: 0;
+    border: 0.5px solid rgb(226, 226, 226);
+}
+
+form {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid rgb(164, 163, 163);
+    border-radius: 7px;
+    margin: 20px 2px;
+}
+
+form>input {
+    color: #54bdea;
+    border-color: #54bdea;
+    border-radius: 7px;
+}
+
+form>input:hover {
+    cursor: pointer;
+}
+
+form>textarea {
+    padding: 5px;
+    border: 0;
+    color: rgb(182, 182, 182);
+}
+
+.btn2 {
+    margin: 20px 2px;
+}
+
+.btn2 a {
+    width: 180px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+    border-radius: 7px;
+    border: 0.5px solid grey;
+}
+
+#note {
+    margin: 20px 2px;
+    font-size: 12px;
+    padding: 7px;
+    color: #427f9b;
+    background-color: #d9edf7;
+}
+
+#suggestion {
+    /* overflow: scroll; */
+    margin: 10px 2px;
+    padding: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: 0.5px solid rgb(217, 217, 217);
+}
+
+#suggestion>p+div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+
+.cards {
+    text-align: center;
+    width: 165px;
+    height: 230px;
+    padding: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    /* border: 1px solid gold; */
+}
+
+.cards>img {
+    width: 100%;
+}
+
+.cards>p {
+    margin: 10px;
+
+}
+
+.cards>p>a {
+    text-decoration: none;
+    color: #54bdea;
+}
+
+.cards button {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: #54bdea;
+    border: 0;
+}
+
+.cards button:hover {
+    cursor: pointer;
+}
+
+#myprofile {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+/* ----------------------------------------- Footer section --------------------------------------- */
+
+.footer {
+    line-height: 1.5;      
+    padding: 60px;
+    background-color: #ffffff;
+    /* border: solid; */
+}
+.sub-container {
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col, .copyright {
+    width: 25%;
+    padding: 2px;
+    /* border: 1px dashed green; */
+}
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+ul {
+    list-style: none;
+}
+.footer-col li a{
+    color: rgb(129, 129, 129);
+}
+.footer-col li a:hover {
+    text-decoration: none;
+    color: #45b6f8;
+}
+.sub-cont-2 {
+    margin-top: 50px;
+    /* border: 1px dashed red; */
+}
+.copyright {
+    margin: auto;
+}
+.copyright h4 {
+    text-align: center;
+    font-size: 18px;
+    /* margin-bottom: 10px; */
+    font-weight: 300;
+    /* border: 1px dashed green; */
+}
