@@ -12,32 +12,37 @@
 </head>
 
 <body>
-     <!-- ---------------------Nav bar ------------------- -->
-     <div class="navbar">
-        <ul>
-            <li><a href="#">Workout Plan</a>
-                <div class="sub-menu">
-                    <ul>
-                        <li><a href="#">Pro-Workout Plan</a></li>
-                        <li><a href="#">Create My Plan</a></li>
 
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#">Exercise</a></li>
-            <li><a href="#">Community</a>
-                <div class="sub-menu">
-                    <ul>
-                        <li><a href="#">Equinox Community</a></li>
-                        <li><a href="#">Blog</a></li>
-
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#">Coach</a></li>
-            <li><a href="#">Elite</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
+    <!-- ---------------------------------- Nav Bar ---------------------------------------- -->
+    <div id="header">
+        <img style="width: 14%; margin-right: 26px;" src="./equinox-white.svg" alt="">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Workout Plan</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="./workout.html">Pro-Workout Plan</a></li>
+                            <li><a href="#">Create My Plan</a></li>
+    
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Exercise</a></li>
+                <li><a href="#">Community</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Equinox Community</a></li>
+                            <li><a href="#">Blog</a></li>
+    
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Coach</a></li>
+                <li><a href="#">Elite</a></li>
+                <li><a href="./myprofile.html">My Equinox</a></li>
+            </ul>
+            <button class="signup-btn">Elite</button>
+        </div>
     </div>
 
     <div class="text-section">
@@ -115,11 +120,16 @@
                 <tbody id="plan-dashboard"></tbody>
 
             </table>
+            <div id="suggestion">
+                <strong>Plan Suggestion:</strong>
+                <strong><a href="./instructor_page.html">Best Workout</a>,</strong>
+                <strong><a href="#">HIIT Routine 1</a></strong>
+            </div>
         </div>
     </div>
 
-     <!-- --------------------- Footer section -------------------- -->
-     <footer class="footer">
+    <!-- --------------------- Footer section -------------------- -->
+    <footer class="footer">
         <div class="sub-container">
             <div class="row">
                 <div class="footer-col">
@@ -256,23 +266,36 @@
         }]
     let tbody = document.getElementById("plan-dashboard");
     let filterselect = document.getElementById("filter")
-
-    // filterselect.addEventListener("change", filtering)
-
-    // function filtering(){
-
-    //     let filteredData = []
-    //     data.filter((el)=>{
-    //         if(el.Category == filterselect.value){
-    //             filteredData.push(el)
-    //             data = el
-    //         }
-    //     })
-    //     console.log(filteredData)
-    // }
+    filterselect.addEventListener("change", ()=>{
+        if(filterselect.value == "Bulking"){
+            data = data.filter((element)=>{
+                if(element.Category == "Bulking"){
+                    return true;
+                }
+            })
+            showdata()
+        }else if(filterselect.value == "Cutting"){
+            data = data.filter((element)=>{
+                if(element.Category == "Cutting"){
+                    return true;
+                }
+            })
+            showdata()
+        }else if(filterselect.value == "Maintaining"){
+            data = data.filter((element)=>{
+                if(element.Category == "Maintaining"){
+                    return true;
+                }
+            })
+            showdata()
+        }else{
+            showdata()
+        }
+    })
+    
 
     function showdata() {
-        // tbody.innerHTML = null
+        tbody.innerHTML = null
         data.forEach((element, index) => {
             let tr = document.createElement("tr")
             let name = document.createElement("td")
