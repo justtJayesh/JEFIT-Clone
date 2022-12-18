@@ -14,12 +14,15 @@
             box-sizing: border-box;
         }
         body {
+            /* font-family: "Montserrat", Sans-serif; */
             background-color: #dbe8f4;
         }
         .form-box{
             width: 500px;
             margin: auto;
-            margin-top: 10%;
+            margin-top: 2%;
+            margin-bottom: 6%;
+            border-radius: 7px;
             /* position: absolute; */
             /* top: 20%; */
             /* left: 50%; */
@@ -31,7 +34,7 @@
         }
         .form-box h1 {
             font-size: 50px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         .form-box .input-field {
             margin-bottom: 15px;
@@ -56,13 +59,36 @@
             border-radius: 5px;
             padding: 18px 15px;
         }
+        .social-link {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            /* border: 1px dashed black; */
+            margin-bottom: 40px;
+        }
+        .social-link img {
+            width: 70px;
+            border-radius: 10px;
+        }
+        .social-link + p {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 
 <body>
     <div id="signup">
+        <div style="display: flex; justify-content: center;">
+            <a href="./index.html"><img src="./logo.svg" alt=""></a>
+        </div>
         <div class="form-box">
-            <h1>Create Account</h1>
+            <h1 style="font-weight: 500;">Create Account</h1>
+            <div class="social-link">
+                <img src="https://www.jefit.com/images/rg_google.svg" alt="">
+                <img src="https://www.jefit.com/images/rg_fb.svg" alt="">
+                <img src="https://www.jefit.com/images/rg_apple.svg" alt="">
+            </div>
+            <p>Or</p>
             <form>
                 <div class="input-field">
                     <input type="text" id="name" placeholder="Enter Username">
