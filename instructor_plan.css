@@ -5,22 +5,31 @@
     font-family: "Montserrat", Sans-serif;
 }
 /* -------------------------------------- Nav Section --------------------------------- */
+#header {
+    display: flex;
+    justify-content: center;
+    /* border: solid; */
+    background-color: #267bf6;
+}
 .navbar {
     background-color: #267bf6;
     text-align: center;
+    /* border: 1px dashed red; */
 
 }
 .navbar ul {
     display: inline-flex;
     list-style: none;
-    color: rgb(167, 167, 167);
+    /* color: rgb(167, 167, 167); */
+
 }
 .navbar ul li {
-    width: 130px;
-    padding: 15px;
-    margin: 15px;
+    width: 147px;
+    padding: 12px;
+    margin: 12px 0px;
 }
 .navbar ul li a {
+    font-size: 20px;
     text-decoration: none;
     color: white
     
@@ -36,16 +45,31 @@
 .navbar ul li:hover  .sub-menu{
     display: block;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: -15px;
 }
 .navbar ul li:hover  .sub-menu ul {
     display: block;
+    text-align: left;
     margin: 10px;
 }
 .navbar ul li:hover  .sub-menu ul li {
-    width: 170px;
+    width: 220px;
     padding: 10px;
+}
+.signup-btn {
+    font-size: 18px;
+    width: 120px;
+    height: 34px;
+    border: 0;
+    color: #267bf6;
+    background-color: white;
+    border-radius: 10px;
+}
+.signup-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #1161d0;
 }
 
 /* ------------------------------------------Super container ----------------------------------------- */
