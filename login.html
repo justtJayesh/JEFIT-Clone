@@ -12,14 +12,17 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+
         }
         body {
+            /* font-family: "Montserrat", Sans-serif; */
             background-color: #dbe8f4;
         }
         .form-box{
             width: 500px;
             margin: auto;
-            margin-top: 10%;
+            margin-top: 2%;
+            border-radius: 7px;
             /* position: absolute; */
             /* top: 20%; */
             /* left: 50%; */
@@ -31,7 +34,7 @@
         }
         .form-box h1 {
             font-size: 50px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         .form-box .input-field {
             margin-bottom: 15px;
@@ -56,13 +59,35 @@
             border-radius: 5px;
             padding: 18px 15px;
         }
+        /* #forgetpass {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        } */
+        .social-link {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            /* border: 1px dashed black; */
+            margin: 40px 3px;
+        }
+        .social-link img {
+            width: 70px;
+            border-radius: 10px;
+        }
+        .social-link + p {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 
 <body>
     <div id="signup">
+        <div style="display: flex; justify-content: center;">
+            <a href="./index.html"><img  src="./logo.svg" alt=""></a>
+        </div>
         <div class="form-box">
-            <h1>LOGIN</h1>
+            <h1 style="font-weight: 500;">LOGIN</h1>
             <form>
                 <div class="input-field">
                     <input type="email" id="email" placeholder="Username or Email">
@@ -72,6 +97,14 @@
                 </div>
                 <div class="input-field">
                     <input type="submit" id="signin-btn" value="LOGIN" />
+                </div>
+                <div style="margin: 30px 3px;">
+                    <p>Or continue with</p>
+                    <div class="social-link">
+                        <img src="https://www.jefit.com/images/rg_google.svg" alt="">
+                        <img src="https://www.jefit.com/images/rg_fb.svg" alt="">
+                        <img src="https://www.jefit.com/images/rg_apple.svg" alt="">
+                    </div>
                 </div>
                 <p>New to EQUINOX? <a href="./signup.html"> Create an account.</a></p>
             </form>
@@ -94,7 +127,7 @@
         if(userinfo[i].email == stored_email && userinfo[i].password == stored_pass){
         //   document.getElementById("heading").innerText = "Sign in Successful";
             // alert("login Successfully")
-            window.location.href = "http://www.w3schools.com";
+            window.location.href = "./myprofile.html";
             break;
         }else{
           continue
