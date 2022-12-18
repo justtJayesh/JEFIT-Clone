@@ -6,38 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Equinox</title>
     <link rel="favicon" href="./favicon.ico">
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://kit.fontawesome.com/0db55d1582.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- ---------------------Nav bar ------------------- -->
-    <div class="navbar">
-        <ul>
-            <li><a href="#">Workout Plan</a>
-                <div class="sub-menu">
-                    <ul>
-                        <li><a href="#">Pro-Workout Plan</a></li>
-                        <li><a href="#">Create My Plan</a></li>
-
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#">Exercise</a></li>
-            <li><a href="#">Community</a>
-                <div class="sub-menu">
-                    <ul>
-                        <li><a href="#">Equinox Community</a></li>
-                        <li><a href="#">Blog</a></li>
-
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#">Coach</a></li>
-            <li><a href="#">Elite</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
+    <div id="header">
+        <img style="width: 14%; margin-right: 26px;" src="./equinox-white.svg" alt="">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Workout Plan</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="./workout.html">Pro-Workout Plan</a></li>
+                            <li><a href="#">Create My Plan</a></li>
+    
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Exercise</a></li>
+                <li><a href="#">Community</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Equinox Community</a></li>
+                            <li><a href="#">Blog</a></li>
+    
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Coach</a></li>
+                <li><a href="#">Elite</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+            <button class="signup-btn">Sign Up</button>
+        </div>
     </div>
 
     <!-- ---------------------Top Section---------------- -->
@@ -128,7 +132,7 @@
             <h3>Pro-designed workout plans</h3>
             <h3>Support custom exercises</h3>
             <h3>Flexible workout planning tool</h3>
-            <button class="btn">JOIN NOW</button>
+            <button class="btn"><a href="./signup.html">JOIN NOW</a></button>
         </div>
     </div>
      <!-- --------------------- feature sub section-2 -------------------- -->
