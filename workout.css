@@ -76,7 +76,7 @@ body {
     background-color: #1161d0;
 }
 
-/* -------------------------------------------------------------------------------------- */
+/* --------------------------------------  Container ------------------------------------------------ */
 .text-section {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -112,6 +112,10 @@ body {
 .card div h2 {
     padding: 20px 30px;
     /* border: 1px solid; */
+}
+.card div h2 a {
+    text-decoration: none;
+    color: black;
 }
 /* ----------------------------------------- Table section --------------------------------------- */
 #tcontainer {
